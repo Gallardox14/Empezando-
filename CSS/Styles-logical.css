@@ -1,0 +1,86 @@
+
+:root{
+    font-size: 16px;
+    --gray21: #212121;
+    --gray24: #212429;
+    --gray61: #616161;
+    --gray42: #424242;
+}
+
+body{
+    color: var(--gray42);
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    color: var(--gray21);
+}
+header{
+    font-size:  14px;
+    color: var(--gray61)
+}
+header a{
+    color: var(--gray61);
+    text-decoration: none;
+}
+header a:hover{
+    color: var(--gray21);
+}
+nav details summary{
+    font-weight: bold;
+}
+h1{
+    font-size: 60px;
+    color: var(--gray21)
+}
+h2{
+    font-size: 2em;
+    color: var(--gray21)
+}
+h3{
+    font-size: 1.5em;
+    color: var(--gray42);
+}
+p{
+    font-size: 1em;
+    color: var(--gray42);
+    ;
+}
+
+.prologo{
+    font-size: 1em;
+    color:var(--gray21);
+}
+
+pre{
+    background: #FEC62E;
+    color: #000000;
+}
+
+.hero {
+    background-image:linear-gradient(to top, rgba(255, 255, 255 , .3), transparent),url('../Images/patron-1.png') ;
+    
+    height: 350px;
+}
+
+.section-content{
+    counter-reset: titlelist;
+}
+
+.section-content h3{
+    counter-increment: titlelist;
+}
+
+.section-content h3::before{
+content: counter(titlelist, decimal) ;
+}
+
+.section-content h3::after{
+    
+    width: 32px;
+    height: 4px;
+    background: var(--gray42);
+    display: inline-block;
+}
+
+
+

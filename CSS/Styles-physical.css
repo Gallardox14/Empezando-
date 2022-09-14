@@ -1,0 +1,187 @@
+
+
+:root{
+    font-size: 16px;
+    --gray21: #212121;
+    --gray24: #212429;
+    --gray61: #616161;
+    --gray42: #424242;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: var(--gray42);
+    margin: 0;
+    font-family: 'Roboto', sans-serif ;
+}
+a{
+    color: var(--gray21);
+}
+header{
+    font-size:  14px;
+    width: 188px;
+    color: var(--gray61);
+    position: absolute;
+    top: 64px;
+    left: -232px;
+    z-index: 1;
+}
+header li{
+    margin-bottom: 16px;
+}
+header a{
+    color: var(--gray61);
+    text-decoration: none;
+}
+header a:hover{
+    color: var(--gray21);
+}
+nav details summary{
+    font-weight: bold;
+    line-height: 24px;
+}
+h1{
+    font-size: 60px;
+    color: var(--gray21);
+    margin: 64px 10px 16px;
+    font-weight: normal;
+    /* border: 10px solid red; */
+}
+
+hr{
+    margin: 64px 0;
+}
+h2{
+    font-size: 2em;
+    color: var(--gray21);
+    margin-top: 64px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+h3{
+    font-size: 1.5em;
+    color: var(--gray42);
+    margin: 16px 0px 24px 0px;
+    font-weight: normal;
+    padding-bottom: 4px;
+    /* top: 0; */
+    position:relative;
+    /* background: white; */
+}
+
+p{
+    font-size: 1em;
+    color: var(--gray42);
+    margin: 24px 0 16px 0
+}
+
+.prologo{
+    font-size: 1em;
+    color:var(--gray21);
+}
+
+pre{
+    background: #FEC62E;
+    padding: 40px 40px ;
+    font-family: 'Roboto';
+    line-height: 24px ;
+    color: #000000;
+}
+
+blockquote{
+    margin: 32px 0;
+    padding-left: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    border-left: 4px solid var(--gray21) 
+}
+blockquote span{
+    color: var(--gray61);
+}
+
+blockquote span::before{
+    content: '-';
+}
+
+.header-content{
+    position: relative;
+}
+/* .main { 
+    border: 1px solid blue
+} */
+.header{
+    position: sticky;
+    top:0%
+}
+.wrapper{
+    width: 902px;
+    margin: auto;
+    /* border: 1px solid red */
+}
+.main-content{
+    background: white;
+   /*  padding: 20px; */
+    /* border: 1px solid red */
+}
+
+.hero {
+    background-image:linear-gradient(to top, rgba(255, 255, 255 , .3), transparent),url('../Images/patron-1.png') ;
+    
+    height: 350px;
+}
+
+.section-content:first-of-type{
+    margin: 0;
+}
+
+.section-content img:first-of-type{
+   margin-top: 0 ;
+}
+.section-content{
+margin-top: 164px;
+/* position: relative;
+ */}
+
+.section-content{
+    line-height: 24px;
+}
+
+.section-content ul li {
+    margin: 16px 0px ;
+}
+
+.section-content + hr {
+    display: none;
+}
+
+.section-content img {
+    margin-top:  40px;
+    margin-bottom: 16px;
+}
+.section-content{
+    counter-reset: titlelist;
+}
+
+.section-content h3{
+    counter-increment: titlelist;
+    padding-bottom: 8px;
+}
+
+.section-content h3::before {
+content: counter(titlelist, decimal) '. ';
+}
+
+.section-content h3::after{
+    content:' ';
+    width: 80px;
+    height: 4px;
+    background: var(--gray42);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
