@@ -1,65 +1,126 @@
 
 :root{
     font-size: 16px;
-    --gray21: #212121;
-    --gray24: #212429;
-    --gray61: #616161;
-    --gray42: #424242;
+    --white61: #A5A3A5;
+    --white42: white;
+    --white30: #3A3539;
 }
 
 body{
-    color: var(--gray42);
-    font-family: 'Roboto', sans-serif;
+    color: var(--white61);
+    font-family: 'Nunito', sans-serif;
+    background:#251F24 ;
+    margin-inline: 100px
 }
 a{
-    color: var(--gray21);
+    color: var(--white42);
+}
+
+.header{
+    position: sticky;
+    inset-block-start: -45px;
+}
+.header-content{
+    position: relative;
+    inset-block-start: 64px;
 }
 header{
     font-size:  14px;
-    color: var(--gray61)
+    color: var(--white42);
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -208px;
+    inline-size:188px ;
+}
+header li{
+    color: var(--white61);
+    margin-block-end: 16px;
 }
 header a{
-    color: var(--gray61);
+    color: var(--white61);
     text-decoration: none;
 }
 header a:hover{
-    color: var(--gray21);
+    color: var(--white42);
 }
 nav details summary{
     font-weight: bold;
+    line-height: 24px;
 }
+
+
+/* h1, h2, h3{
+    font-weight: normal;
+} */
 h1{
     font-size: 60px;
-    color: var(--gray21)
+    color: var(--white42);
+    margin-block-start: 64px;
+    margin-block-end: 16px;
 }
 h2{
     font-size: 2em;
-    color: var(--gray21)
+    color: var(--white42);
+    margin-block: 40px;
 }
 h3{
     font-size: 1.5em;
-    color: var(--gray42);
+    color: var(--white42);
+    margin-block: 16px;
+    font-weight: 600px;
 }
 p{
     font-size: 1em;
-    color: var(--gray42);
-    ;
+    color: var(--white61);
+    line-height: 24px;
 }
 
-.prologo{
-    font-size: 1em;
-    color:var(--gray21);
+hr{
+    margin-block: 40px;
+    border-color: rgba(97, 97, 97, 0.2);
 }
+
+blockquote{
+    background: var(--white30) ;
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    border-radius: 8px;
+    padding-block: 24px;
+    padding-inline: 24px;
+    font-size: 24px;
+    line-height: 32px;
+}
+blockquote p{
+    color: var(--white42);
+}
+
+blockquote span::before{
+    content: '- ';
+}
+
+/* .prologo{
+    font-size: 1em;
+    color:var(--white42);
+} */
 
 pre{
-    background: #FEC62E;
-    color: #000000;
+    background: var(--white30);
+    padding-block:40px ;
+    padding-inline: 40px;
+    overflow: auto;
+    border-radius: 8px;
 }
 
 .hero {
-    background-image:linear-gradient(to top, rgba(255, 255, 255 , .3), transparent),url('../Images/patron-1.png') ;
+    background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%),url('../Images/patron-2.png') ;
     
     height: 350px;
+}
+
+.section-content img{
+    margin-block-start:  40px; 
+    display: block;
+    max-inline-size: 100%;
 }
 
 .section-content{
@@ -71,16 +132,74 @@ pre{
 }
 
 .section-content h3::before{
-content: counter(titlelist, decimal) ;
+content: counter(titlelist, decimal) '. ';
+
 }
 
-.section-content h3::after{
+
+.main hr{
+    display: none;
+}
+
+/* .main{
+border: 1px solid red
+} */
+
+.wrapper{
+    /* border: 2px solid yellow; */
+    max-inline-size: 902px;
+   /*  block-size: ; */
+   margin: auto;
     
-    width: 32px;
-    height: 4px;
-    background: var(--gray42);
-    display: inline-block;
+}
+
+.main-content{
+   /*  border: 1px solid blue; */
+    padding-inline: 16px;
+    
+}
+
+.list li{
+    color: var(--white42);
+}
+
+li span{
+    color: var(--white61);
 }
 
 
+.slider{
+   /*  border: solid red 1px; */
+}
 
+.slider-container{
+   /*  block-size: 100px; */
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+    /* border: solid yellow 1px; */
+}
+.video{
+    margin: 0;
+    /* border: solid blue 1px; */
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+   /*  border: 1px solid yellow; */
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white ;
+    border-radius: 100%;
+}

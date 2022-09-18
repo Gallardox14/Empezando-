@@ -115,7 +115,7 @@ blockquote span::before{
     position: sticky;
     top:0%
 }
-.wrapper{
+.boddy{
     width: 902px;
     margin: auto;
     /* border: 1px solid red */
