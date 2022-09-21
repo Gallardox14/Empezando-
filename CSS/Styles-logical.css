@@ -160,7 +160,7 @@ border: 1px solid red
 } */
 
 .wrapper {
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     max-inline-size: 902px;
     /*  block-size: ; */
     margin: auto;
