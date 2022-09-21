@@ -9,17 +9,17 @@ body {
     color: var(--white61);
     font-family: 'Nunito', sans-serif;
     background: #251F24;
-    margin-inline: 100px
+    margin-inline: 0px;
 }
 
 .mailto {
     color: #157EFB;
 }
 
-.header {
-   /*  position: sticky;
-    inset-block-start: -45px; */
-}
+/* .header {
+    position: sticky;
+    inset-block-start: -45px;
+} */
 
 .header-content {
   /*   position: relative;
@@ -277,4 +277,11 @@ li span {
         inset-inline-start: -208px;
         inline-size: 188px;
     }
+    body {
+        color: var(--white61);
+        font-family: 'Nunito', sans-serif;
+        background: #251F24;
+        margin-inline: 100px;
+    }
+
 }
