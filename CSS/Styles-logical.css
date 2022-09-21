@@ -9,7 +9,7 @@ body {
     color: var(--white61);
     font-family: 'Nunito', sans-serif;
     background: #251F24;
-    margin-inline: 0px;
+    margin-inline: 10px;
 }
 
 .mailto {
