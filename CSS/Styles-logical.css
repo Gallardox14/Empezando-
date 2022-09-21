@@ -95,15 +95,14 @@ blockquote {
     background: var(--white30);
     margin-block-start: 80px;
     margin-block-end: 63px;
-    inline-size: 100%;
+    inline-size: auto;
     border-radius: 8px;
     padding-block: 24px;
     padding-inline: 24px;
     font-size: 24px;
     line-height: 32px;
     position: relative ;
-    inset-inline-start: -60px;
-    
+    inset-inline-start: auto;
 }
 
 blockquote p {
@@ -162,7 +161,7 @@ border: 1px solid red
 
 .wrapper {
     /* border: 2px solid yellow; */
-    max-inline-size: 1000px;
+    max-inline-size: 902px;
     /*  block-size: ; */
     margin: auto;
 
