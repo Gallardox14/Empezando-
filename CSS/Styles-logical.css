@@ -22,17 +22,17 @@ body {
 } */
 
 .header-content {
-  /*   position: relative;
+    /*   position: relative;
     inset-block-start: 64px; */
-    padding-inline: 20px ;
+    padding-inline: 20px;
 }
 
 header {
     margin-block-start: 20px;
     font-size: 14px;
     color: var(--white42);
-  /*   position: absolute; */
-   /*  inset-block-start: 0;
+    /*   position: absolute; */
+    /*  inset-block-start: 0;
     inset-inline-start: -208px;
     inline-size: 188px; */
 }
@@ -101,7 +101,7 @@ blockquote {
     padding-inline: 24px;
     font-size: 24px;
     line-height: 32px;
-    position: relative ;
+    position: relative;
     inset-inline-start: auto;
 }
 
@@ -160,7 +160,7 @@ border: 1px solid red
 } */
 
 .wrapper {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     max-inline-size: 902px;
     /*  block-size: ; */
     margin: auto;
@@ -233,21 +233,25 @@ li span {
     /* display: block; */
 }
 
-.form ::-webkit-input-placeholder{
+.form ::-webkit-input-placeholder {
     color: var(--white61)
 }
 
 .form input[type="submit"] {
-    background: #157EFB ;
+    background: #157EFB;
     border: none;
 }
 
-@media screen  and (min-width: 1366px){
-    .hero{block-size: 350px;}
-    h1{
+@media screen and (min-width: 1366px) {
+    .hero {
+        block-size: 350px;
+    }
+
+    h1 {
         font-size: 60px;
         margin-block-start: 64px;
     }
+
     blockquote {
         background: var(--white30);
         margin-block-start: 80px;
@@ -258,16 +262,18 @@ li span {
         font-size: 24px;
         line-height: 32px;
     }
+
     .header {
         position: sticky;
         inset-block-start: -45px;
     }
-    
+
     .header-content {
         position: relative;
         inset-block-start: 64px;
         padding-inline: 0;
     }
+
     header {
         font-size: 14px;
         color: var(--white42);
@@ -276,6 +282,7 @@ li span {
         inset-inline-start: -208px;
         inline-size: 188px;
     }
+
     body {
         color: var(--white61);
         font-family: 'Nunito', sans-serif;
