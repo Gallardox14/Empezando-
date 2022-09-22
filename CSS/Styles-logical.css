@@ -4,6 +4,9 @@
     --white42: white;
     --white30: #3A3539;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     color: var(--white61);
