@@ -16,7 +16,25 @@
     <meta property="og:description" content="Todo lo que necesita en tu día a día como frontend" />
     <meta property="og:url" content="https://gallardox14.github.io/Empezando-/" />
     <meta property="og:image"
-        content="https://gallardox14.github.io/Empezando-/Images/dom.png" />
+        content="https://gallardox14.github.io/Empezando-/Images/vsc_white.png" />
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="./Favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./Favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./Favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./Favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./Favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./Favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./Favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./Favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./Favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./Favicon./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./Favicon./favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./Favicon./favicon-16x16.png">
+<link rel="manifest" href="./Favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -44,6 +62,15 @@
                                 <li><a href="#semantica">Semántica</a></li>
                                 <li><a href="#atributos">Atributos</a></li>
                                 <li><a href="#que-es-css">Qué es CSS</a></li>
+                            </ol>
+                        </details>
+                        <details open>
+                        <summary>Modelo de caja</summary>
+                        <ol>
+                                <li><a href="#compuesto">Modelo</a></li>
+                                <li><a href="#propiedades-fi">Propiedades físicas</a></li>
+                                <li><a href="#propiedades-logic">Propiedades lógicas</a></li>
+                                <li><a href="#imagen-modelo">Modelo de caja</a></li>        
                             </ol>
                         </details>
                     </nav>
@@ -150,8 +177,8 @@
                 </section>
                 <section class="section-content">
 
-                    <h2>Modelo de caja</h2>
-                    <h3>El modelo de caja está compuesto por:</h3>
+                    <h2 id="modelo">Modelo de caja</h2>
+                    <h3 id="compuesto">El modelo de caja está compuesto por:</h3>
                     <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos
                         estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
                     <ol>
@@ -160,7 +187,7 @@
                         <li>TBorder / Bordes</li>
                         <li>Margin / Márgenes</li>
                     </ol>
-                    <h3>Propiedades físicas para el modelo de caja:</h3>
+                    <h3 id="propiedades-fi">Propiedades físicas para el modelo de caja:</h3>
                     <div class="list">
 
                         <ul>
@@ -169,7 +196,7 @@
                             <li><span>border / border-top | border-right | border-bottom | border-left</span></li>
                             <li><span>padding / padding-top | padding-right | padding-bottom | padding-left</span></li>
                         </ul>
-                        <h3>Propiedades lógicas para el modelo de caja:</h3>
+                        <h3 id="propiedades-logic">Propiedades lógicas para el modelo de caja:</h3>
                         <ul>
                             <li><span>inline-size / block-size</li>
                             <li><span>margin-block | margin-inline | margin-block-start | margin-block-end |
@@ -180,13 +207,13 @@
                                     padding-inline-start | padding-inline-end</span></li>
                         </ul>
                     </div>
-                    <h3>Modelo de caja</h3>
+                    <h3 id="imagen-modelo">Modelo de caja</h3>
                     <img src="./Images/Rectangle 56.png" alt="image" title="image">
                 </section>
 
                 <div class="section-content">
 
-                    <h2>Videos algo lindos</h2>
+                    <h2 id="videos">Videos algo lindos</h2>
                     <div class="slider">
                         <scroll-container class="slider-container">
                             <scroll-page class="slider-slide" id="video-1">
